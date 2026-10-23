@@ -1,0 +1,641 @@
+{
+  "source": "saywise-brand-kit.zip",
+  "assetCount": 127,
+  "assets": [
+    {
+      "path": "banners/gradient/saywise-banner-link-preview-gradient.png",
+      "bytes": 603087,
+      "sha256": "24ba9ab0bbfac2e2aff90db31b0a2bb3e8fd218d858517b6da3cb2b6aeeda8a8"
+    },
+    {
+      "path": "banners/gradient/saywise-banner-linkedin-company-gradient.png",
+      "bytes": 194356,
+      "sha256": "6682a6f67db81f706ecd311b619d211f3e0a64f129c642d6825b7e648019b146"
+    },
+    {
+      "path": "banners/gradient/saywise-banner-x-header-gradient.png",
+      "bytes": 822807,
+      "sha256": "883a914388da50455d2add69368375eea15b49d364096f365cf0ea13c4395102"
+    },
+    {
+      "path": "banners/gradient/saywise-banner-linkedin-banner-gradient.png",
+      "bytes": 690659,
+      "sha256": "a991731e38aa4296fa624c93c351aa5b5b7b2c44f5934391c3b6d0474e9ffec9"
+    },
+    {
+      "path": "banners/gradient/saywise-banner-16x9-gradient.png",
+      "bytes": 2007364,
+      "sha256": "63937e43f7d5cb071374b4a31f6054af6cc4535a8e3347a30156e831f0cf6fb4"
+    },
+    {
+      "path": "banners/transparent-black-logo/saywise-banner-linkedin-company-transparent-black-logo.png",
+      "bytes": 16827,
+      "sha256": "c940257b6fc4fd53fa5f7ed679abdb41a8774062263243cd8a7fc547a7087176"
+    },
+    {
+      "path": "banners/transparent-black-logo/saywise-banner-x-header-transparent-black-logo.png",
+      "bytes": 43111,
+      "sha256": "e11c7fb80eaa661ba358da2bb9307c0820f35174df4de720ae520652a176f610"
+    },
+    {
+      "path": "banners/transparent-black-logo/saywise-banner-linkedin-banner-transparent-black-logo.png",
+      "bytes": 37414,
+      "sha256": "db54999411d03c0721f3d8a512333e92a2ac3163b2cd9456815cf32389394765"
+    },
+    {
+      "path": "banners/transparent-black-logo/saywise-banner-16x9-transparent-black-logo.png",
+      "bytes": 72503,
+      "sha256": "cbda26a57a31e5eac7e78bdd792b24265af155de17762322a73afd9134165a13"
+    },
+    {
+      "path": "banners/transparent-black-logo/saywise-banner-link-preview-transparent-black-logo.png",
+      "bytes": 37098,
+      "sha256": "0e406c6081ccc2ee6f86c75a4645d7ebda0295d05d7578f37a3f3468ae15f5f7"
+    },
+    {
+      "path": "banners/light/saywise-banner-linkedin-banner-light.png",
+      "bytes": 39212,
+      "sha256": "1748b4d577e5e8ec0e6298055bd5ef10f468879bd370dff3298cd81d32159d64"
+    },
+    {
+      "path": "banners/light/saywise-banner-link-preview-light.png",
+      "bytes": 37898,
+      "sha256": "bcca6ede8058a258f966d637d5abb9b77e5d2fabfe7de4e1416588efd73b9ab1"
+    },
+    {
+      "path": "banners/light/saywise-banner-linkedin-company-light.png",
+      "bytes": 17994,
+      "sha256": "9f19d21a3c8a212ab1c45ef080255e8b77a6e32118a789cff75c5ee4ca7e899d"
+    },
+    {
+      "path": "banners/light/saywise-banner-x-header-light.png",
+      "bytes": 44731,
+      "sha256": "9d9f15b260d6a75174dddd5aa54a92c041c401da46e9fab5e962838be6d3eb64"
+    },
+    {
+      "path": "banners/light/saywise-banner-16x9-light.png",
+      "bytes": 72303,
+      "sha256": "45f3e62bdf447012257e9ec4e14cab9b7479fac6e750b221ea2e233a7a837d77"
+    },
+    {
+      "path": "banners/dark/saywise-banner-16x9-dark.png",
+      "bytes": 72627,
+      "sha256": "152dcb5e2aac6229205cb53ce1705aced73e227eda4612c3b9efad2133cd7dd6"
+    },
+    {
+      "path": "banners/dark/saywise-banner-linkedin-company-dark.png",
+      "bytes": 18056,
+      "sha256": "9e6e2fd94329f35507c14f1404da85f749cfc24602936541d5a9e72348b7907b"
+    },
+    {
+      "path": "banners/dark/saywise-banner-x-header-dark.png",
+      "bytes": 44862,
+      "sha256": "003d7273fac7289e325a998118d49dc8e806d6b2708c87f2726e8c8a6b829461"
+    },
+    {
+      "path": "banners/dark/saywise-banner-link-preview-dark.png",
+      "bytes": 38254,
+      "sha256": "871a3645c64e1bc10b80bf6cfa8a265c51da02c5a04cfaff7ea887b1557152c9"
+    },
+    {
+      "path": "banners/dark/saywise-banner-linkedin-banner-dark.png",
+      "bytes": 39331,
+      "sha256": "6910946afbf0b1978e4ff41a3d9f38c581eb5c148b4216b9d46310f220ae40a6"
+    },
+    {
+      "path": "banners/white/saywise-banner-linkedin-banner-white.png",
+      "bytes": 37607,
+      "sha256": "6c55c42538c00af1b5ff7d178847e86f914950495d3bb04c9983cfccf9f4a997"
+    },
+    {
+      "path": "banners/white/saywise-banner-16x9-white.png",
+      "bytes": 70403,
+      "sha256": "2b6b794238e6ae663f8e72bc359164fbb0dc7ad5519f1f1bf47c5d1799bb8170"
+    },
+    {
+      "path": "banners/white/saywise-banner-link-preview-white.png",
+      "bytes": 36510,
+      "sha256": "4a348a39daf96ae0d0b46c3d49107ecf6f25b144856a4b5356f7be4a9c0bf406"
+    },
+    {
+      "path": "banners/white/saywise-banner-x-header-white.png",
+      "bytes": 42945,
+      "sha256": "d0673a704218510aa821c6a7ad84884a1a6d5c079150ec6190f9d795703576a1"
+    },
+    {
+      "path": "banners/white/saywise-banner-linkedin-company-white.png",
+      "bytes": 17259,
+      "sha256": "4f31747a11b3c6358e4ee6169dd93900a021d7a4e31e196e946d188c757952bd"
+    },
+    {
+      "path": "banners/black/saywise-banner-16x9-black.png",
+      "bytes": 63459,
+      "sha256": "9f14b066a7c4db2fc0208956a6d504356a28ffdcadf6496f7819235d67974200"
+    },
+    {
+      "path": "banners/black/saywise-banner-link-preview-black.png",
+      "bytes": 31395,
+      "sha256": "3a801c48770840b2414d65bcefd604affa8a25198b0e79cf33e36b5e6cb1c3d7"
+    },
+    {
+      "path": "banners/black/saywise-banner-x-header-black.png",
+      "bytes": 37874,
+      "sha256": "7f382662965bfc98cf85bb1c3e7994d4b7bc29f03c8d6c3104ed20f3cfb44f81"
+    },
+    {
+      "path": "banners/black/saywise-banner-linkedin-company-black.png",
+      "bytes": 14554,
+      "sha256": "5500491860ec62ef87e3c88dd9e9e24ed728216e31e69f10285f55954b1587ff"
+    },
+    {
+      "path": "banners/black/saywise-banner-linkedin-banner-black.png",
+      "bytes": 32831,
+      "sha256": "4077e1fc8fc7d164d3d0f3348433fe751edea0c507049867dd57704658fbd8b2"
+    },
+    {
+      "path": "banners/photo/saywise-banner-linkedin-banner-photo.jpg",
+      "bytes": 418080,
+      "sha256": "e5d7f96726bd1f690776ee263edbbc2091bff7fc2e30df68e0e9e84f99510797"
+    },
+    {
+      "path": "banners/photo/source-photo-unsplash-jason-w.jpg",
+      "bytes": 1474126,
+      "sha256": "bcdfb3672ca9aba6be6d1818f28aedc6651df692b26f7eb7b511a0e947f2f41a"
+    },
+    {
+      "path": "banners/photo/saywise-banner-link-preview-photo.jpg",
+      "bytes": 500847,
+      "sha256": "0d95713a9b2c33ca2a3ca0b70bc3d855c1c723d85eddf56a20e24857e0b78b91"
+    },
+    {
+      "path": "banners/photo/saywise-banner-linkedin-company-photo.jpg",
+      "bytes": 161894,
+      "sha256": "9a115a94a5367d0b703ed63aaf8559cdf74bd34739c1eb05af7aa00affae1382"
+    },
+    {
+      "path": "banners/photo/saywise-banner-x-header-photo.jpg",
+      "bytes": 486048,
+      "sha256": "26818f9e44e559e7dc9a964aa4881c95e4dda1475a428663331d4278f4070943"
+    },
+    {
+      "path": "banners/photo/PHOTO-CREDIT.txt",
+      "bytes": 150,
+      "sha256": "5b51059cc5057bdd1f1c90b2f0a566c7a097f59fde530b825a774c6a6d6053e2"
+    },
+    {
+      "path": "banners/photo/saywise-banner-16x9-photo.jpg",
+      "bytes": 1213575,
+      "sha256": "cd6a480b441005de9238c276977b529063621cc86916867729d6bc882a97f308"
+    },
+    {
+      "path": "banners/transparent-white-logo/saywise-banner-16x9-transparent-white-logo.png",
+      "bytes": 64404,
+      "sha256": "2550f0601a360a866da0ec008308cc55ee1d04e29e214af2b7dabcce09d06ce6"
+    },
+    {
+      "path": "banners/transparent-white-logo/saywise-banner-link-preview-transparent-white-logo.png",
+      "bytes": 31318,
+      "sha256": "f775265273d32979848ac1d5a52fc73a979dd68043054fb1afc2139f6f81f97e"
+    },
+    {
+      "path": "banners/transparent-white-logo/saywise-banner-linkedin-company-transparent-white-logo.png",
+      "bytes": 13273,
+      "sha256": "9ac0b2a41e89cf056d8c37432614043d3bffe9a39ac8362c0ede7ac34da87c4e"
+    },
+    {
+      "path": "banners/transparent-white-logo/saywise-banner-x-header-transparent-white-logo.png",
+      "bytes": 36685,
+      "sha256": "54ba167136d43a2d106e3bd8ee99aa2a0b6eaeeb081b6ead33e03b970a89053c"
+    },
+    {
+      "path": "banners/transparent-white-logo/saywise-banner-linkedin-banner-transparent-white-logo.png",
+      "bytes": 31253,
+      "sha256": "463b7501f68edaa6588e70022c14221cf4a770748b17a5e85fed14d6526711d8"
+    },
+    {
+      "path": "logo/png/saywise-icon-color.png",
+      "bytes": 554555,
+      "sha256": "c42593e8c374773832a08a0c3fd91be7edcc442591f4716c9a931acc2911f207"
+    },
+    {
+      "path": "logo/png/saywise-icon-white.png",
+      "bytes": 58206,
+      "sha256": "18e656de02dbd31c54c397f119384e46c6ca78d4f865af6bfe8d1d4cbf398650"
+    },
+    {
+      "path": "logo/png/saywise-logo-black.png",
+      "bytes": 140623,
+      "sha256": "333c218736c1008b09083298974a43cf69031b391cebbb572e66bb92ce37eace"
+    },
+    {
+      "path": "logo/png/saywise-logo-color.png",
+      "bytes": 693888,
+      "sha256": "02dd62e1d88046114d7071a71af3a6ab4b8702c11b0904e7ef2d351eb378f760"
+    },
+    {
+      "path": "logo/png/saywise-icon-black.png",
+      "bytes": 70324,
+      "sha256": "3b58eb24a75aed55ae78dddbcd9c7abbd08b99b4d03b12e0fa5cec0e12939b8c"
+    },
+    {
+      "path": "logo/png/saywise-logo-white.png",
+      "bytes": 113948,
+      "sha256": "dd43f46b5842b0b6be327917f17a0c2cb40cf848ecbbba6fec4e0686901d52e3"
+    },
+    {
+      "path": "logo/vector/saywise-logo-black.svg",
+      "bytes": 6134,
+      "sha256": "1e4b25d1bc19ac13fa16dbe4d31d6eacbc3eaae5698e85b74306d7ade6ff6c79"
+    },
+    {
+      "path": "logo/vector/saywise-icon-white.svg",
+      "bytes": 946,
+      "sha256": "80a91c2c9893888cfd3f288a2f12cfa4ce06a10e44e0e45e48cd2f3c48ecec5f"
+    },
+    {
+      "path": "logo/vector/saywise-icon-color.svg",
+      "bytes": 1150,
+      "sha256": "39e4aa1754ce4c7ceea63a4aee80ce0696ee595bc2750f2f19bb14ea7912f8cc"
+    },
+    {
+      "path": "logo/vector/saywise-logo-white.svg",
+      "bytes": 6134,
+      "sha256": "f93e2d3733d905ad3f54f1e8e6028692d43f0f3da346ae34c2770959e828e9d0"
+    },
+    {
+      "path": "logo/vector/saywise-icon-black.svg",
+      "bytes": 946,
+      "sha256": "16ace37166ca8ff408fe5afbe81c514256d38c6398077317a302c76a31a991bf"
+    },
+    {
+      "path": "logo/vector/saywise-logo-color.svg",
+      "bytes": 6551,
+      "sha256": "bf6127a23e141908356555bd3a8a2020d713059daba91f29fb56f1e0e2c701ee"
+    },
+    {
+      "path": "colors/saywise-brand-colors.png",
+      "bytes": 462724,
+      "sha256": "11f986bd4e40a12ca2a1dc3d756533da2442b918ae7f76f429bbcd885ae5156e"
+    },
+    {
+      "path": "icons/favicon/favicon-192.png",
+      "bytes": 14415,
+      "sha256": "1c729b58d58daadaf2eb10380e5150e5d9481c8f5a4f5cd20afcf2036f712a72"
+    },
+    {
+      "path": "icons/favicon/favicon-180.png",
+      "bytes": 12757,
+      "sha256": "050142a6b918f8390a2eddfe079422d28f979971618b370ed9f32a5bfa4d9cad"
+    },
+    {
+      "path": "icons/favicon/favicon-16.png",
+      "bytes": 514,
+      "sha256": "0c58ed489e0e7e0354e6b3d4c9ba8b4117c9a0925549ea60f308a89906aa1631"
+    },
+    {
+      "path": "icons/favicon/favicon-32.png",
+      "bytes": 1097,
+      "sha256": "bd7abd76ec9c85ead622d9ea6255075d577c1fdf97b9b88b12b3cbb09bda23d8"
+    },
+    {
+      "path": "icons/favicon/favicon-512.png",
+      "bytes": 81047,
+      "sha256": "facba5515943b70ca379b6c350e54f37d62dfdff05b99465864f53b9af44e093"
+    },
+    {
+      "path": "icons/favicon/favicon.svg",
+      "bytes": 1428,
+      "sha256": "ca39c5abc3240adc9b83442e92f05aa20363bebddc0b5ee858da168cd162c4a3"
+    },
+    {
+      "path": "icons/png/saywise-avatar-circle-gradient-1024.png",
+      "bytes": 211677,
+      "sha256": "7b54df1599f5f0bcb7ac3d897500b1a8332e5c0ece075cd9126e369d2a4d7d0d"
+    },
+    {
+      "path": "icons/png/saywise-avatar-circle-light-400.png",
+      "bytes": 24775,
+      "sha256": "d6b1e4692e40ddeeaecdc524e80ff3ec0d8e349c063ac6e2135c0c397ed24f78"
+    },
+    {
+      "path": "icons/png/saywise-app-icon-white-1024.png",
+      "bytes": 23821,
+      "sha256": "a5656b47e2a2ce24a7c19b7f2261fe6fea4746cf6de31168cd04c6ac6b836237"
+    },
+    {
+      "path": "icons/png/saywise-avatar-circle-dark-400.png",
+      "bytes": 24923,
+      "sha256": "436c6738e850ce6acafb7c6d104a10200ababd83a526bf337627161a81782f18"
+    },
+    {
+      "path": "icons/png/saywise-avatar-circle-white-1024.png",
+      "bytes": 37641,
+      "sha256": "5566ffc26a81a8dc5090ed8ba87b212c256939c90db633d0463b5d8193cd3134"
+    },
+    {
+      "path": "icons/png/saywise-app-icon-dark-1024.png",
+      "bytes": 94639,
+      "sha256": "4b72c928a06aeb6b56a5e0a4c981f12d0af93b0f2b43c2c3a86f76d16e3d1316"
+    },
+    {
+      "path": "icons/png/saywise-app-icon-gradient-1024.png",
+      "bytes": 89361,
+      "sha256": "5f510aae3d1f0ce20770c8424ff53a3c49d9cfe88ddc5d61a730b21992d8fe79"
+    },
+    {
+      "path": "icons/png/saywise-avatar-circle-dark-1024.png",
+      "bytes": 107608,
+      "sha256": "d216265999731b797644830800f88575a3fe4408757f8b8b943ae9dec7476b04"
+    },
+    {
+      "path": "icons/png/saywise-app-icon-black-1024.png",
+      "bytes": 21859,
+      "sha256": "c87c5bbc678fe68fadd49e4085b92a5538566f04a78937e03917e648ad85b902"
+    },
+    {
+      "path": "icons/png/saywise-avatar-circle-light-1024.png",
+      "bytes": 107589,
+      "sha256": "cc3515a02d8930d63f5e1b502e499912ca87bb4fb277698ceb95be710625a5bc"
+    },
+    {
+      "path": "icons/png/saywise-avatar-circle-black-400.png",
+      "bytes": 11910,
+      "sha256": "3596fce11627b235dc6e49c09484a5ad05415e1f212c224e089d57a5c538a427"
+    },
+    {
+      "path": "icons/png/saywise-avatar-circle-white-400.png",
+      "bytes": 13101,
+      "sha256": "d095ee7cc2f4eb08c44ca4bd04024f5739e408b5e00c9bef2251913ee304eaa7"
+    },
+    {
+      "path": "icons/png/saywise-avatar-circle-black-1024.png",
+      "bytes": 36707,
+      "sha256": "f6bfa0e550781ba26ececf2e4442eb56993e872847f4ed73130fbe21c80b9d43"
+    },
+    {
+      "path": "icons/png/saywise-app-icon-light-1024.png",
+      "bytes": 92833,
+      "sha256": "5b39e33ef09869c0a30cc62b84a4a6fe783c723846e23180c7a17e867fd261c6"
+    },
+    {
+      "path": "icons/png/saywise-avatar-circle-gradient-400.png",
+      "bytes": 25920,
+      "sha256": "f2606e8adc2baa4f4eac5b88f07e7bb9941e2d4da9700bc2804678d107c95a47"
+    },
+    {
+      "path": "icons/vector/saywise-avatar-circle-gradient.svg",
+      "bytes": 1247,
+      "sha256": "96c409d0b3acccd40817cee35d1f88e6d8f2e6469b2eaff3a49fc05361658e5f"
+    },
+    {
+      "path": "icons/vector/saywise-app-icon-gradient.svg",
+      "bytes": 1244,
+      "sha256": "28181e6d9d1636762faa8ee311ebe70099d3978bd4ecf44938e061428091b623"
+    },
+    {
+      "path": "icons/vector/saywise-app-icon-black.svg",
+      "bytes": 1047,
+      "sha256": "178007ff146ddd84755f27d91d4508e2add68625da111951307b9ffa88d1d776"
+    },
+    {
+      "path": "icons/vector/saywise-app-icon-dark.svg",
+      "bytes": 1251,
+      "sha256": "45d2153bee38e1c59e3a7372af1fba895a7eded0a237706288e653395428f99a"
+    },
+    {
+      "path": "icons/vector/saywise-avatar-circle-black.svg",
+      "bytes": 1050,
+      "sha256": "eea5ccb9e80ef6a92fe8e1eb191d6c924e956ffe71c2209b75e42bdaca029037"
+    },
+    {
+      "path": "icons/vector/saywise-avatar-circle-dark.svg",
+      "bytes": 1256,
+      "sha256": "ea578f5f9f179df5b7b48f41c9bbb8af4b4731b4b0c361263de4a4406fc09486"
+    },
+    {
+      "path": "icons/vector/saywise-avatar-circle-light.svg",
+      "bytes": 1254,
+      "sha256": "9772eaa10e2778d048de60786cc05cd327bb31cff28ac328eb2ce13a71fdf52e"
+    },
+    {
+      "path": "icons/vector/saywise-app-icon-light.svg",
+      "bytes": 1251,
+      "sha256": "960164b5f00a2e01da00842c55ef503b6cec1ad5315f6cf878ab386bf5dda526"
+    },
+    {
+      "path": "icons/vector/saywise-app-icon-white.svg",
+      "bytes": 1047,
+      "sha256": "eb3140029adeaf65a7e72d47a5526300096b298609ce80f7319e9ed5a99b7b81"
+    },
+    {
+      "path": "icons/vector/saywise-avatar-circle-white.svg",
+      "bytes": 1050,
+      "sha256": "2381c440eb3afc2286eb2211a12ec5becf40ce43240f84c9b7d325e8cb272308"
+    },
+    {
+      "path": "sage/png/sage-full-body-glance.png",
+      "bytes": 378122,
+      "sha256": "47cec71cbd6eebbffabdfcf983e4f7be7aabb07dbc6e550e589b0345865b69c5"
+    },
+    {
+      "path": "sage/png/sage-avatar-square-transparent.png",
+      "bytes": 214642,
+      "sha256": "fa10832636f4cbbc22a3ba24a1d780dc3cd2bc23fdf466da772c88f085fad1c4"
+    },
+    {
+      "path": "sage/png/sage-full-body-eyes-closed.png",
+      "bytes": 373572,
+      "sha256": "89c2d652427fc7a52414628f5ce368ec99d272e1feceacc81fcd9bc6dc3b1459"
+    },
+    {
+      "path": "sage/png/sage-upper-body.png",
+      "bytes": 393965,
+      "sha256": "442c2e7460a293c17b3366e1fb32618300eb71762721cbd5a73952eee5b8b696"
+    },
+    {
+      "path": "sage/png/sage-avatar-square-gradient.png",
+      "bytes": 576822,
+      "sha256": "c087282e3d86749a72452afaaba58dd8a26b0bc72707034f16bea941634b0c39"
+    },
+    {
+      "path": "sage/png/sage-full-body.png",
+      "bytes": 373118,
+      "sha256": "71518b090c065499ef3c8e4fd82f8ed68c6fa8807785e45f0bb1f1a0bc4643c4"
+    },
+    {
+      "path": "sage/png/sage-upper-body-eyes-closed.png",
+      "bytes": 394670,
+      "sha256": "06a0f23032dbf8872ce90460fcc7abded90099db204fbe6d43cd1d0ca424ad68"
+    },
+    {
+      "path": "sage/png/sage-avatar-circle-grey.png",
+      "bytes": 234251,
+      "sha256": "d89936ad9c77281d2ad61de13ee8a5762147d9213bbce1b097ff6daa33fc066c"
+    },
+    {
+      "path": "sage/png/sage-avatar-square-white.png",
+      "bytes": 196948,
+      "sha256": "66c397397a5f4e862739a2be47e58cdb8337988a5a83394317212f5ea62057bd"
+    },
+    {
+      "path": "sage/png/sage-avatar-square-mist.png",
+      "bytes": 197717,
+      "sha256": "164a7669b73f2af6cb258062459684b530f1cdb825ad0f93d3d69b1f5387bec6"
+    },
+    {
+      "path": "sage/png/sage-avatar-circle-mist.png",
+      "bytes": 234395,
+      "sha256": "0bb3199312f20be574cb53307ab026fa0ea80b895df0c4acf6365843f7cf7856"
+    },
+    {
+      "path": "sage/png/sage-avatar-circle-green.png",
+      "bytes": 233937,
+      "sha256": "b5e6a7ab00d8b18a38511470e4374d87158f543634e6fe9a00a29370ccf3ffed"
+    },
+    {
+      "path": "sage/png/sage-avatar-circle-gradient.png",
+      "bytes": 596557,
+      "sha256": "1fb934c7e39ee9e5c12d349d4b3992baa6e4f15adfb9d4e81fb1f6a673a92fa0"
+    },
+    {
+      "path": "sage/png/sage-avatar-square-green.png",
+      "bytes": 196112,
+      "sha256": "344335753238c964039785e54d3cdc47e48efdb858020046f902f958f2fb5d05"
+    },
+    {
+      "path": "sage/png/sage-upper-body-glance.png",
+      "bytes": 403467,
+      "sha256": "44feb9852f6ef12f2e754fd4ffeaf76caadc4d32717c1b7d1f157c7671a562d3"
+    },
+    {
+      "path": "sage/png/sage-avatar-square-grey.png",
+      "bytes": 197598,
+      "sha256": "eb71c071de39bccd8c8842aea38dee19a2f4bec1918247a1ee57d2f24d4c3592"
+    },
+    {
+      "path": "sage/source-raster/sage-production-upper.png",
+      "bytes": 30157,
+      "sha256": "367b5a44b585d0f63dec1fd86e6b59307e561bc0e92c2f8d29d537d8a77f7a77"
+    },
+    {
+      "path": "sage/source-raster/sage-production-upper-strip.webp",
+      "bytes": 61824,
+      "sha256": "e64db69d29e4c0183a4b3ec0ef115e86ea6d7e2c993e902c85b6894a20af4a78"
+    },
+    {
+      "path": "sage/source-raster/sage-production-upper-glance.webp",
+      "bytes": 22762,
+      "sha256": "2bbb3c6058366838bf3815216465307084b4ca8a7a046eddb1506f154a28b30f"
+    },
+    {
+      "path": "sage/source-raster/sage-production-full-glance.webp",
+      "bytes": 21834,
+      "sha256": "8ec34f0f124bff07561ed164128c8151bafb03baba94c8404f6ac26d1f227e4f"
+    },
+    {
+      "path": "sage/source-raster/sage-production-full.webp",
+      "bytes": 21602,
+      "sha256": "2116bef9364768fe8e6d6d630f605eec2f4011df67bab9d12e08ae52e02de6a2"
+    },
+    {
+      "path": "sage/source-raster/sage-production-upper.webp",
+      "bytes": 22404,
+      "sha256": "72da05bbd49624e6f0b168233943cedc5f5feb9a6e6cab2752aa470c61a3a79b"
+    },
+    {
+      "path": "sage/source-raster/sage-production-full-strip.webp",
+      "bytes": 52628,
+      "sha256": "7e123f24645ba0f035efdc5fe9a2a6774d81577e1ac052bacb583d6dc0d61ebb"
+    },
+    {
+      "path": "sage/source-raster/sage-production-full-eyes-closed.webp",
+      "bytes": 21588,
+      "sha256": "c0559495aed34c748f9093e73a6594f2e367e4c41180340d62bff3fe81b068c0"
+    },
+    {
+      "path": "sage/source-raster/sage-production-upper-eyes-closed.webp",
+      "bytes": 22398,
+      "sha256": "152bf9bdcb9b9aacf47cbc132834411acac5a8ea076d181a92615cf9af34337e"
+    },
+    {
+      "path": "sage/vector/sage-full-body.svg",
+      "bytes": 23319,
+      "sha256": "dfa46b9be12de00dfbe7cb0f57f68d90ff74d168421a517540bfab5a353c3808"
+    },
+    {
+      "path": "sage/vector/sage-avatar-square-gradient.svg",
+      "bytes": 23604,
+      "sha256": "34dd8b3c5459cbbf97b404a44ff9ca04db1b959642793da56727ba83fe8764dd"
+    },
+    {
+      "path": "sage/vector/sage-upper-body.svg",
+      "bytes": 23332,
+      "sha256": "d135fe67b636363cd338e06d061df52657d11017c9115c37ed60b2eb6e28e531"
+    },
+    {
+      "path": "sage/vector/sage-full-body-eyes-closed.svg",
+      "bytes": 23392,
+      "sha256": "d799b3e8e2eeeca1e17df9f6701133c4b33f01cd68a7ae21e527122d2c5138c6"
+    },
+    {
+      "path": "sage/vector/sage-avatar-square-transparent.svg",
+      "bytes": 23328,
+      "sha256": "e1696a9dcab759f0f10ef055dbe238ae293ff7256f86e465e12e918fcad6904b"
+    },
+    {
+      "path": "sage/vector/sage-full-body-glance.svg",
+      "bytes": 28718,
+      "sha256": "80b9fc2f001575f0bee70dc2d7a192031062084854ae3aadff30b19f06a8314d"
+    },
+    {
+      "path": "sage/vector/sage-avatar-square-grey.svg",
+      "bytes": 23402,
+      "sha256": "d63d2965008cb0e8a068aa979532df63ade0d5b2e894d55691d5b1a81722b289"
+    },
+    {
+      "path": "sage/vector/sage-upper-body-glance.svg",
+      "bytes": 28123,
+      "sha256": "f82f029ad678a9c614c8490de5aa7d9e4dd2e097ea98f17a6b0a135b92f297a3"
+    },
+    {
+      "path": "sage/vector/sage-avatar-square-green.svg",
+      "bytes": 23402,
+      "sha256": "5b307cb23b2823d68e6454fa9d9b53651d27d54c9d51fe18eac7c812cf4dab7e"
+    },
+    {
+      "path": "sage/vector/sage-avatar-circle-gradient.svg",
+      "bytes": 23688,
+      "sha256": "28b23939923244f78513b2271223376bd80f1c8635cf39f08567a084c6cba9b5"
+    },
+    {
+      "path": "sage/vector/sage-avatar-circle-green.svg",
+      "bytes": 23499,
+      "sha256": "631faf0dba123093db5316ed8ffa4e39c89b49f24df10c35f2d1a996d6a8ad46"
+    },
+    {
+      "path": "sage/vector/sage-avatar-circle-mist.svg",
+      "bytes": 23499,
+      "sha256": "2680e6c9062493b113eed26e4573fcded8592f571e0e567f9a1de90155d11486"
+    },
+    {
+      "path": "sage/vector/sage-avatar-square-mist.svg",
+      "bytes": 23402,
+      "sha256": "bc822ae48a56c81b0b82c7a926263645c0135f736137d23826d6768f5695c528"
+    },
+    {
+      "path": "sage/vector/sage-avatar-square-white.svg",
+      "bytes": 23402,
+      "sha256": "eb202205849f5a7d1ec09d979839f5ab3a7554267588e99fc224c61db5f7fa8a"
+    },
+    {
+      "path": "sage/vector/sage-upper-body-eyes-closed.svg",
+      "bytes": 23405,
+      "sha256": "efc04d4ea8ed6cadc1d30bf4a31bbb4ca5e90acdc6f49ea67b5cb6883c1ad812"
+    },
+    {
+      "path": "sage/vector/sage-avatar-circle-grey.svg",
+      "bytes": 23499,
+      "sha256": "da311602112b548d29b14e2f4b565fb18d39b706cc7b507801ed4792b5fc71e5"
+    }
+  ]
+}
