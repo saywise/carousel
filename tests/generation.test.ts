@@ -1,10 +1,11 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import OpenAI from 'openai';
+import { zodTextFormat } from 'openai/helpers/zod';
 import { readConfig } from '../server/config';
 import { createStore } from '../server/store';
 import { createGenerationService } from '../server/generation/service';
-import { schemas, inputSchema, carouselSchema, type Operation } from '../shared/content';
+import { schemas, inputSchema, carouselSchema, outputSchemaFor, webUrl, type Operation } from '../shared/content';
 import { demoCarousel } from '../shared/demo';
 import { estimateCost } from '../server/generation/openai';
 import { SYSTEM_PROMPT, promptFor } from '../server/generation/prompts';
@@ -197,4 +198,24 @@ test('OpenAI Job Explainer uses the five-section contract and returns the same e
     assert.deepEqual(result.data.slides[4].cta, { jobTitle: plan.jobTitle, url: plan.jobUrl });
     assert.deepEqual(result.data.research?.sources, [source]);
   } finally { store.close(); }
+});
+
+test('OpenAI structured-output schemas only use JSON Schema formats OpenAI supports', () => {
+  const supported = new Set(['date-time', 'time', 'date', 'duration', 'email', 'hostname', 'ipv4', 'ipv6', 'uuid']);
+  const unsupported = (node: unknown, path: string): string[] => {
+    if (Array.isArray(node)) return node.flatMap((item, index) => unsupported(item, `${path}[${index}]`));
+    if (!node || typeof node !== 'object') return [];
+    return Object.entries(node).flatMap(([key, value]) => key === 'format' && typeof value === 'string' && !supported.has(value) ? [`${path}.format: ${value}`] : unsupported(value, `${path}.${key}`));
+  };
+  const plans = [undefined, { type: 'company' as const, company: 'Example', jobTitle: 'Designer', jobUrl: 'https://saywise.com/j/abc123' }, { type: 'job' as const, jobTitle: 'Designer', jobUrl: 'https://saywise.com/j/abc123' }];
+  for (const operation of Object.keys(schemas).filter(key => key !== 'generateIllustration') as Operation[]) {
+    for (const plan of plans) {
+      const { schema } = zodTextFormat(outputSchemaFor(operation, { ...input, plan }), operation);
+      assert.deepEqual(unsupported(schema, '$'), [], `${operation} (${plan?.type ?? 'no plan'}) sends a JSON Schema format OpenAI rejects`);
+    }
+  }
+});
+test('webUrl accepts only well-formed http(s) links up to 1000 characters', () => {
+  for (const url of ['https://saywise.com/j/abc123', 'http://example.com/x']) assert.ok(webUrl.safeParse(url).success, url);
+  for (const url of ['javascript:alert(1)', 'ftp://example.com', 'not a url', 'https://', `https://example.com/${'a'.repeat(1100)}`]) assert.ok(!webUrl.safeParse(url).success, url.slice(0, 40));
 });
