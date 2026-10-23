@@ -2,7 +2,9 @@ import { z } from 'zod';
 import { artworkIds, brandThemes } from './brand';
 import { jobListingSchema, jobRequestSchema } from './jobs';
 
-export const webUrl = z.string().url().max(1000).refine(value => /^https?:\/\//i.test(value), 'Use an http or https link.');
+const isWebUrl = (value: string) => { try { return ['http:', 'https:'].includes(new URL(value).protocol); } catch { return false; } };
+// Not .url(): OpenAI structured outputs reject the JSON Schema `format: "uri"` it emits.
+export const webUrl = z.string().max(1000).refine(isWebUrl, 'Use an http or https link.');
 export const contentPlanSchema = z.discriminatedUnion('type', [
   z.object({ type: z.literal('general') }),
   z.object({ type: z.literal('company'), company: z.string().trim().min(1).max(120), jobTitle: z.string().trim().min(1).max(120), jobUrl: webUrl, role: z.string().trim().min(1).max(120).optional(), listing: jobListingSchema.optional() }),
@@ -53,7 +55,7 @@ export const schemas = {
   generateStaticPost: generatedDocumentSchema.extend({ slides: z.array(generatedSlideSchema).length(1) }),
   rewriteSlide: generatedSlideSchema,
   generateCaption: z.object({ caption: z.string().max(2400), hashtags: z.array(z.string().max(60)).max(12) }),
-  recommendTrendingTopics: z.object({ topics: z.array(z.object({ title: z.string(), angle: z.string(), evidence: z.enum(['suggested', 'source-backed']), sources: z.array(z.object({ title: z.string(), url: z.string().url() })) })).min(1).max(8) }),
+  recommendTrendingTopics: z.object({ topics: z.array(z.object({ title: z.string(), angle: z.string(), evidence: z.enum(['suggested', 'source-backed']), sources: z.array(z.object({ title: z.string(), url: webUrl })) })).min(1).max(8) }),
   generateIllustration: z.object({ dataUrl: z.string().startsWith('data:image/'), alt: z.string(), provenance: z.enum(['generated', 'edited', 'demo']) }),
 };
 export const companySlideSchema = generatedSlideSchema.extend({
