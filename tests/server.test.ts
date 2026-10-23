@@ -86,3 +86,19 @@ test('production API requires authentication and enforces its configured host', 
     assert.equal(await request({ Host: 'untrusted.example' }), 403);
   } finally { await new Promise<void>(resolve => server.close(() => resolve())); store.close(); }
 });
+test('production rate limits are per client behind one reverse proxy', async () => {
+  const config = readConfig({ NODE_ENV: 'production', GENERATION_MODE: 'demo', APP_ORIGIN: 'https://studio.example', STUDIO_PASSWORD: 'test-password-not-a-real-secret' });
+  const store = createStore(':memory:');
+  const server = createApp(config, store, createGenerationService(config, store)).listen(0, '127.0.0.1');
+  await new Promise<void>(resolve => server.once('listening', resolve));
+  const port = (server.address() as { port: number }).port;
+  const authorization = `Basic ${Buffer.from('studio:test-password-not-a-real-secret').toString('base64')}`;
+  const remaining = (forwardedFor: string) => new Promise<number>((resolve, reject) => get(`http://127.0.0.1:${port}/api/status`, { headers: { Host: 'studio.example', Authorization: authorization, 'X-Forwarded-For': forwardedFor } }, response => {
+    response.resume();
+    const match = /r=(\d+)/.exec(String(response.headers.ratelimit));
+    if (response.statusCode === 200 && match) resolve(Number(match[1])); else reject(new Error(`Unexpected response ${response.statusCode} with RateLimit ${response.headers.ratelimit}`));
+  }).on('error', reject));
+  try {
+    assert.equal(await remaining('203.0.113.1'), await remaining('203.0.113.2'));
+  } finally { await new Promise<void>(resolve => server.close(() => resolve())); store.close(); }
+});

@@ -1,0 +1,35 @@
+# Saywise Content Studio on one Lightsail instance: app container behind Caddy (automatic HTTPS).
+# Run from anywhere with: docker compose -f deploy/lightsail/docker-compose.yml up -d --build
+# DOMAIN is read from deploy/lightsail/.env (the .env next to this file).
+services:
+  app:
+    build: ../..
+    env_file: .env
+    restart: unless-stopped
+    # Named volume (not a bind mount) so it inherits the image's node-owned /app/data.
+    volumes:
+      - studio-data:/app/data
+    # Reachable only from Caddy on the compose network; nothing is published to the host.
+    expose:
+      - "3000"
+
+  caddy:
+    image: caddy:2.11.7
+    restart: unless-stopped
+    environment:
+      DOMAIN: ${DOMAIN}
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on:
+      - app
+
+volumes:
+  studio-data:
+  caddy-data:
+  caddy-config:

@@ -33,6 +33,8 @@ export function createApp(config: Config, store: Store, generation: GenerationSe
     next();
   });
   if (config.NODE_ENV === 'production') {
+    // Production runs behind exactly one HTTPS reverse proxy; trust its X-Forwarded-For so rate limits are per client, not shared.
+    app.set('trust proxy', 1);
     app.use(rateLimit({ windowMs: 60_000, limit: 300, standardHeaders: 'draft-8', legacyHeaders: false }));
     app.use((req, res, next) => {
       const raw = req.headers.authorization?.startsWith('Basic ') ? Buffer.from(req.headers.authorization.slice(6), 'base64').toString() : '';
