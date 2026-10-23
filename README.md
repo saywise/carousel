@@ -54,9 +54,11 @@ Images can be edited by uploading a PNG/JPEG/WebP (up to 5 MB) as reference. The
 1. Set `GENERATION_MODE=openai`, `OPENAI_API_KEY`, `OPENAI_TEXT_MODEL`, and `OPENAI_IMAGE_MODEL` in your host's secret/environment settings. Model defaults are configurable examples; confirm your API account has access. ChatGPT/Codex subscription access does not supply production API authentication.
 2. Set `NODE_ENV=production`, `HOST=0.0.0.0`, `PORT`, and the exact HTTPS `APP_ORIGIN` of the deployment.
 3. Set `STUDIO_USER` and a strong `STUDIO_PASSWORD` of at least 16 characters. The single-workspace application uses HTTP Basic authentication in production. Terminate HTTPS at your reverse proxy and preserve the original Host header. For a multi-user service, replace this guard and add per-user authorization/quotas before opening access.
+   The production server assumes exactly one reverse proxy in front of it (the hosting platform's or your own HTTPS proxy) and trusts its `X-Forwarded-For` header for per-client rate limiting.
 4. Configure persistent `DATA_DIR` and backups. The included SQLite storage suits one server instance. For horizontally scaled hosting, implement the same `Store` interface with a shared database and use distributed rate limiting.
 5. Run `npm test` and `npm run build`, then `npm start`. The production build contains no CLI invocation adapter. The included Dockerfile copies only the built application and production dependencies, with no Codex installation, user home, login, or `.env`.
 6. Set `ENABLE_WEB_RESEARCH=true` to enable researched company and job posts.
+   For a ready-made single-server setup on Amazon Lightsail (Docker + Caddy with automatic HTTPS), follow [`deploy/lightsail/README.md`](deploy/lightsail/README.md).
 7. Run `npm run test:openai` in a trusted environment with valid API credentials for one billable text request. Image integration is contract-tested without billing; verify real image access separately if enabling it.
 
 Do not use `VITE_` variables for credentials or place secrets in client code. There is no client provider or model selector. Switching generation infrastructure does not change the editor, content model, rendering, exports, or prompts.
